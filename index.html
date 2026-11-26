@@ -1,0 +1,342 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Zhilin He | Carnegie Mellon University</title>
+  <meta name="description" content="Zhilin He is a master's student in Electrical and Computer Engineering at Carnegie Mellon University working on robot learning, motion planning, and control.">
+  <meta name="author" content="Zhilin He">
+  <meta name="color-scheme" content="light">
+  <link rel="icon" href="./favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="./stylesheet.css">
+  <link rel="stylesheet" href="./site.css">
+  <link rel="stylesheet" href="./research/preview.css">
+  <link rel="stylesheet" href="./research/papers.css">
+  <script src="./portrait.js" defer></script>
+  <script type="module" src="./research/papers.js"></script>
+</head>
+<body>
+  <a class="skip-link" href="#research">Skip to research</a>
+  <main class="page">
+    <header class="bio">
+      <div class="bio-text">
+        <h1 class="name">Zhilin He</h1>
+        <p>I’m a master’s student in <a href="https://www.ece.cmu.edu/">Electrical and Computer Engineering</a> at <a href="https://www.cmu.edu/">Carnegie Mellon University</a>. I work with <a href="https://www.cs.cmu.edu/~cliu6/">Changliu Liu</a> in the <a href="https://icontrol.ri.cmu.edu/">Intelligent Control Lab</a> and <a href="https://www.ece.cmu.edu/directory/bios/andrew-spielberg.html">Andrew Spielberg</a> in the <a href="https://loci.ece.cmu.edu/">Laboratory of Computational Invention</a>. I also work closely with <a href="https://www.andrew.cmu.edu/user/gaurij/">Gauri Joshi</a> and <a href="https://jiaoyangli.me/">Jiaoyang Li</a>.</p>
+        <p>My research interests are robot learning, motion planning, and control. I develop generative methods that use robot dynamics, geometric constraints, and contact feedback to plan motion. My work spans <a href="https://arxiv.org/abs/2610.21140">contact-rich manipulation</a>, <a href="https://arxiv.org/abs/2610.07772">legged locomotion</a>, and <a href="https://roboticsproceedings.org/rss22/p041.html">multi-robot coordination</a>.</p>
+        <nav class="bio-links" aria-label="Contact and academic profiles">
+          <a href="mailto:hectorh@andrew.cmu.edu">Email</a>
+          <a href="./assets/documents/cv.pdf">CV</a>
+          <a href="./assets/documents/research-statement.pdf">Research Statement</a>
+          <a href="https://scholar.google.com/citations?user=1KXa-WkAAAAJ&amp;hl=en">Google Scholar</a>
+          <a href="https://github.com/hhhhzl">GitHub</a>
+          <a href="https://www.linkedin.com/in/zhilin-hector-he/">LinkedIn</a>
+        </nav>
+      </div>
+      <div class="bio-photo">
+        <a id="portrait" href="./assets/portraits/zhilin-he-bridge.jpg" aria-label="View the second portrait of Zhilin He">
+          <img src="./assets/portraits/zhilin-he.jpg" alt="Zhilin He wearing glasses" width="240" height="240">
+        </a>
+      </div>
+    </header>
+
+    <section id="updates" class="text-section" aria-labelledby="updates-heading">
+      <h2 id="updates-heading">Updates</h2>
+      <dl class="dated-list">
+        <dt><time datetime="2026-10-09">Oct 9, 2026</time></dt>
+        <dd>I released <a href="https://github.com/hhhhzl/genedynamics/releases/tag/v0.1.0">GenerativeDynamics v0.1.0</a>, the first public version of my robotics planning and control framework.</dd>
+        <dt>2026</dt>
+        <dd><a href="https://arxiv.org/abs/2609.18964">FedGuide</a> was accepted for a <strong>spotlight presentation</strong> at CoRL.</dd>
+        <dt>2026</dt>
+        <dd><a href="https://icontrol.ri.cmu.edu/news/iros2026.html">MD-COAS</a> was accepted to IROS, and our <a href="https://roboticsproceedings.org/rss22/p041.html">multi-robot motion planning paper</a> was accepted to RSS.</dd>
+        <dt>2024</dt>
+        <dd>Our paper on <a href="https://ieeexplore.ieee.org/document/10644719">optimal antivirus routing</a> appeared at the American Control Conference.</dd>
+      </dl>
+    </section>
+
+    <section id="research" aria-labelledby="publication-heading">
+  <div class="publication-heading">
+    <h2 id="publication-heading">Research</h2>
+    <div class="research-utilities">
+      <details class="paper-filter" hidden>
+        <summary>Filter papers</summary>
+        <div class="paper-filter-fields">
+          <label>Search <input id="publication-search" type="search" aria-label="Search publications"></label>
+          <label>Year <select id="year-filter"><option value="">All years</option></select></label>
+          <label><input id="selected-filter" type="checkbox"> Selected only</label>
+          <span id="result-count" role="status"></span>
+        </div>
+      </details>
+      <a href="assets/publications.bib" download>Bibliography</a>
+      <button id="media-motion-toggle" type="button" hidden>Pause previews</button>
+    </div>
+  </div>
+  <div id="publication-list" class="papers">
+    <article class="paper" id="publication-he2026mga" data-abbr="MGA" data-year="2026" data-selected="true" data-topics="Contact-rich manipulation, Impedance control, Reinforcement learning, Generative optimization" aria-labelledby="title-he2026mga">
+      <div class="paper-media">
+        <div class="paper-fallback">
+          <a data-visual="method" href="./assets/publications/methods/mga.png" data-width="2299" data-height="885" data-alt="The original MGA framework diagram connects offline training, a learned proposal prior, manifold-aware model-based refinement, and force-adaptive control; four toy-path panels illustrate the role of LRC." data-caption="MGA overview: offline policy training, model-based refinement, and force-adaptive deployment with feedback."><img src="./assets/publications/methods/mga.png" alt="The original MGA framework diagram connects offline training, a learned proposal prior, manifold-aware model-based refinement, and force-adaptive control; four toy-path panels illustrate the role of LRC." width="2299" height="885" loading="lazy"></a>
+          <a data-visual="montage" href="./assets/publications/gallery/mga-experiments.mp4" data-width="1280" data-height="800" data-alt="MGA: 9 experiment clips shown simultaneously in one animated montage." data-caption="All 9 experiment clips shown together. Each panel loops independently." data-poster="./assets/publications/gallery/mga-experiments.jpg" data-gif="./assets/publications/gallery/mga-experiments.gif">Experiments</a>
+        </div>
+      </div>
+      <div class="paper-info">
+        <h3 id="title-he2026mga"><a href="https://arxiv.org/abs/2610.21140">Manifold Generative Annealing for Contact Constraint-aware Impedance Control with Reinforcement Learning Prior</a></h3>
+        <p class="paper-authors"><strong>Zhilin He</strong>, Guoquan Qi, <a href="https://www.cs.cmu.edu/~cliu6/">Changliu Liu</a><sup title="Advising">†</sup></p>
+        <p class="paper-venue"><em>Under review</em>, 2026</p>
+        <div class="paper-links" aria-label="Resources for MGA">
+            <a href="https://arxiv.org/pdf/2610.21140">PDF</a>
+            <a href="https://github.com/hhhhzl/genedynamics">Code</a>
+            <a href="https://hhhhzl.github.io/generative-dynamics/research/mga/">Website</a>
+            <a href="https://arxiv.org/html/2610.21140v1">HTML</a>
+            <a href="https://doi.org/10.48550/arXiv.2610.21140">DOI</a>
+            <a href="https://arxiv.org/abs/2610.21140">arXiv</a>
+        </div>
+        <p class="paper-desc">Learned interaction strategies meet online geometric refinement for surface scanning, peg insertion, and humanoid contact control.</p>
+        <details class="paper-detail" id="abstract-he2026mga">
+          <summary>Abstract</summary>
+          <p>Contact-rich robotic tasks require coordinated motion and impedance under uncertain interaction dynamics and physical constraints. While recent methods on learned policies provide useful interaction strategies, they may fail when contact conditions differ from those encountered during training. Model-based generative methods show promising receding-horizon trajectories optimization results, but often lack structured behavioral guidance and refinement that jointly accounts for constraint geometry and actual contact responses. To this end, we propose Manifold Generative Annealing (MGA), a joint model-free and model-based generative framework for motion–impedance optimization. MGA first organizes pretrained reinforcement learning policies into structured sequence proposals, retaining task-specific interaction strategies without committing to their execution. It then evaluates these proposals alongside exploratory samples through model-based rollouts for refinement or separate execution selection. Crucially, realization-aware manifold refinement aligns updates from the refinement bank with both task constraints and locally achievable physical responses, allowing learned experience to guide online adaptation under changing contact conditions. Experiments cover surface scanning, peg insertion, and humanoid pushing, with improved safety success rate of impedance control under nominal and sensing-shift conditions.</p>
+        </details>
+        <details class="paper-detail" id="bibtex-he2026mga">
+          <summary>BibTeX</summary>
+          <pre tabindex="0"><code>@misc{he2026mga,
+  title = {Manifold Generative Annealing for Contact Constraint-aware Impedance Control with Reinforcement Learning Prior},
+  author = {Zhilin He and Guoquan Qi and Changliu Liu},
+  year = {2026},
+  note = {Under review},
+  eprint = {2610.21140},
+  archivePrefix = {arXiv},
+  primaryClass = {cs.RO},
+  doi = {10.48550/arXiv.2610.21140},
+  url = {https://arxiv.org/abs/2610.21140}
+}</code></pre>
+        </details>
+      </div>
+    </article>
+    <article class="paper" id="publication-he2026twogo" data-abbr="2GO" data-year="2026" data-selected="true" data-topics="Locomotion, Constraint geometry, Humanoid robotics, Quadrupeds" aria-labelledby="title-he2026twogo">
+      <div class="paper-media">
+        <div class="paper-fallback">
+          <a data-visual="method" href="./assets/publications/methods/twogo.png" data-width="2368" data-height="933" data-alt="Original 2GO framework diagram showing task modulation, constraint geometry, geometric-aware generative updates, optional CFS correction, and governor-based deployment." data-caption="2GO overview: transport selection, geometry-shaped score and exploration, CFS retraction, and deployment through a reference governor."><img src="./assets/publications/methods/twogo.png" alt="Original 2GO framework diagram showing task modulation, constraint geometry, geometric-aware generative updates, optional CFS correction, and governor-based deployment." width="2368" height="933" loading="lazy"></a>
+          <a data-visual="montage" href="./assets/publications/gallery/2go-experiments.mp4" data-width="1280" data-height="548" data-alt="2GO: 7 experiment clips shown simultaneously in one animated montage." data-caption="All 7 experiment clips shown together. Each panel loops independently." data-poster="./assets/publications/gallery/2go-experiments.jpg" data-gif="./assets/publications/gallery/2go-experiments.gif">Experiments</a>
+        </div>
+      </div>
+      <div class="paper-info">
+        <h3 id="title-he2026twogo"><a href="https://arxiv.org/abs/2610.07772">Model-Based Geometry-Aware Generative Optimization for Constrained Locomotion Planning</a></h3>
+        <p class="paper-authors"><strong>Zhilin He</strong>, Xinyuan Wang, <a href="https://www.cs.cmu.edu/~cliu6/">Changliu Liu</a><sup title="Advising">†</sup></p>
+        <p class="paper-venue"><em>Under review</em>, 2026</p>
+        <div class="paper-links" aria-label="Resources for 2GO">
+            <a href="https://arxiv.org/pdf/2610.07772">PDF</a>
+            <a href="https://github.com/hhhhzl/genedynamics">Code</a>
+            <a href="https://hhhhzl.github.io/generative-dynamics/research/2go/">Website</a>
+            <a href="https://arxiv.org/html/2610.07772v1">HTML</a>
+            <a href="https://doi.org/10.48550/arXiv.2610.07772">DOI</a>
+            <a href="https://arxiv.org/abs/2610.07772">arXiv</a>
+        </div>
+        <p class="paper-desc">Constraint geometry shapes generative planning for quadruped footholds and humanoid posture in narrow, obstacle-rich environments.</p>
+        <details class="paper-detail" id="abstract-he2026twogo">
+          <summary>Abstract</summary>
+          <p>Constrained Locomotion Planning (CLP) for quadrupeds and humanoids, where robots must satisfy collision avoidance, contact consistency, kinematic feasibility, and support constraints, is challenging under high-dimensional dynamics and highly non-convex environments. Recent Model-Based Diffusion (MBD) approaches recast trajectory optimization as posterior sampling over trajectories, using known dynamics and Monte Carlo rollouts to analytically estimate the denoising score function without demonstration learning. While constrained variants further incorporate feasibility into model-based score rollouts and show promising performance, they are still limited by (1) lacking a task-modulated active constraint geometry that shapes the score direction and reverse stochasticity, and (2) using deterministic DDPM-style reverse transport without adaptive scheduling across different generative transports. Therefore, we introduce Model-Based Geometry-Aware Generative Optimization (2GO) for constrained locomotion, which turns active constraint geometry into executable denoising operators through normal- induced metric shaping, tangent-space stochastic filtering, and CFS-based retraction. 2GO further decouples generative transport from reverse stochasticity through an adaptive diffusion and flow-like schedule. Experiments on constrained quadruped and humanoid locomotion demonstrate strong performance in discrete foothold selection and continuous posture planning, with higher success rates, fewer violations, and improved execution compatibility. Code: https://github.com/hhhhzl/genedynamics</p>
+        </details>
+        <details class="paper-detail" id="bibtex-he2026twogo">
+          <summary>BibTeX</summary>
+          <pre tabindex="0"><code>@misc{he2026twogo,
+  title = {Model-Based Geometry-Aware Generative Optimization for Constrained Locomotion Planning},
+  author = {Zhilin He and Xinyuan Wang and Changliu Liu},
+  year = {2026},
+  note = {Under review},
+  eprint = {2610.07772},
+  archivePrefix = {arXiv},
+  primaryClass = {cs.RO},
+  doi = {10.48550/arXiv.2610.07772},
+  url = {https://arxiv.org/abs/2610.07772}
+}</code></pre>
+        </details>
+      </div>
+    </article>
+    <article class="paper" id="publication-he2026fedguide" data-abbr="FedGuide" data-year="2026" data-selected="true" data-topics="Federated learning, Reinforcement learning, Diffusion" aria-labelledby="title-he2026fedguide">
+      <div class="paper-media">
+        <div class="paper-fallback">
+          <a data-visual="method" href="./assets/publications/methods/fedguide.png" data-width="2387" data-height="746" data-alt="Three original FedGuide panels compare policy-based aggregation, diffusion priors only, and priors with a value baseline in a two-client heterogeneous setting." data-caption="FedGuide method visualization: policy aggregation, diffusion priors, and diffusion priors with value-baseline guidance."><img src="./assets/publications/methods/fedguide.png" alt="Three original FedGuide panels compare policy-based aggregation, diffusion priors only, and priors with a value baseline in a two-client heterogeneous setting." width="2387" height="746" loading="lazy"></a>
+          <a data-visual="montage" href="./assets/publications/gallery/fedguide-experiments.mp4" data-width="1280" data-height="704" data-alt="FedGuide: 8 experiment clips shown simultaneously in one animated montage." data-caption="All 8 experiment clips shown together. Each panel loops independently." data-poster="./assets/publications/gallery/fedguide-experiments.jpg" data-gif="./assets/publications/gallery/fedguide-experiments.gif">Experiments</a>
+        </div>
+      </div>
+      <div class="paper-info">
+        <h3 id="title-he2026fedguide"><a href="https://arxiv.org/abs/2609.18964">FedGuide: Diffusion-Prior Alignment and Value Baseline Guidance for Heterogeneous Federated Reinforcement Learning</a></h3>
+        <p class="paper-authors"><strong>Zhilin He</strong>, <a href="https://www.andrew.cmu.edu/user/gaurij/">Gauri Joshi</a><sup title="Advising">†</sup></p>
+        <p class="paper-venue"><em>Conference on Robot Learning (CoRL)</em>, 2026 <strong class="paper-award">(Spotlight)</strong></p>
+        <div class="paper-links" aria-label="Resources for FedGuide">
+            <a href="https://arxiv.org/pdf/2609.18964">PDF</a>
+            <a href="https://github.com/hhhhzl/fedguide">Code</a>
+            <a href="https://hhhhzl.github.io/fedguide-page/">Website</a>
+            <a href="https://doi.org/10.48550/arXiv.2609.18964">DOI</a>
+            <a href="https://arxiv.org/abs/2609.18964">arXiv</a>
+        </div>
+        <p class="paper-desc">Diffusion behavior priors and a return-aware value baseline support collaborative policy learning across heterogeneous clients.</p>
+        <details class="paper-detail" id="abstract-he2026fedguide">
+          <summary>Abstract</summary>
+          <p>Federated Reinforcement Learning (FRL) enables collaborative policy learning across distributed agents with heterogeneous environments. While recent methods based on variance reduction, divergence penalization, and momentum optimization improve FRL under heterogeneous settings, they still primarily synchronize policy or value-network parameters and do not explicitly address distributional mismatch among heterogeneous clients. Therefore, we propose FedGuide, a FRL framework that uses diffusion priors as behavior models to provide personalized data supported distributions for heterogeneous local policy learning. Instead of directly averaging local policies, FedGuide aggregates those diffusion priors through Optimal-Transport Mixture-of-Experts (OT-MoE), preserving heterogeneous behavior modes in distribution space. It further develops a Distribution Correction Estimation (DICE) value baseline to provide low-variance, return-aware guidance for local policy improvement. Experiments across heterogeneous environments show that FedGuide outperforms representative FRL methods in client-average returns, final-round performance, and worst-round robustness, while maintaining stable learning under stronger heterogeneity.</p>
+        </details>
+        <details class="paper-detail" id="bibtex-he2026fedguide">
+          <summary>BibTeX</summary>
+          <pre tabindex="0"><code>@inproceedings{he2026fedguide,
+  title = {FedGuide: Diffusion-Prior Alignment and Value Baseline Guidance for Heterogeneous Federated Reinforcement Learning},
+  author = {Zhilin He and Gauri Joshi},
+  year = {2026},
+  booktitle = {Conference on Robot Learning (CoRL)},
+  eprint = {2609.18964},
+  archivePrefix = {arXiv},
+  primaryClass = {cs.LG},
+  doi = {10.48550/arXiv.2609.18964},
+  url = {https://arxiv.org/abs/2609.18964},
+  note = {Spotlight presentation}
+}</code></pre>
+        </details>
+      </div>
+    </article>
+    <article class="paper" id="publication-he2026mdcoas" data-abbr="MD-COAS" data-year="2026" data-selected="true" data-topics="Motion planning, Optimal control, Constraints, Diffusion" aria-labelledby="title-he2026mdcoas">
+      <div class="paper-media">
+        <div class="paper-fallback">
+          <a data-visual="method" href="./assets/publications/methods/mdcoas.png" data-width="2600" data-height="872" data-alt="Original MD-COAS diagram shows CFS trajectory projection, constraint optimization, adaptive scheduling, and the model-based diffusion schedule." data-caption="MD-COAS overview: constraint optimization and adaptive scheduling coupled to model-based diffusion."><img src="./assets/publications/methods/mdcoas.png" alt="Original MD-COAS diagram shows CFS trajectory projection, constraint optimization, adaptive scheduling, and the model-based diffusion schedule." width="2600" height="872" loading="lazy"></a>
+          <a data-visual="montage" href="./assets/publications/gallery/md-coas-experiments.mp4" data-width="1280" data-height="704" data-alt="MD-COAS: 7 experiment clips shown simultaneously in one animated montage." data-caption="All 7 experiment clips shown together. Each panel loops independently." data-poster="./assets/publications/gallery/md-coas-experiments.jpg" data-gif="./assets/publications/gallery/md-coas-experiments.gif">Experiments</a>
+        </div>
+      </div>
+      <div class="paper-info">
+        <h3 id="title-he2026mdcoas"><a href="https://arxiv.org/abs/2607.14455">Motion Planning with Model-Based Diffusion via Constraint Optimization and Adaptive Scheduling</a></h3>
+        <p class="paper-authors"><strong>Zhilin He</strong>, Bowei Li, Jianlin Dou, Yuner Zhang, <a href="https://www.cs.cmu.edu/~cliu6/">Changliu Liu</a><sup title="Advising">†</sup></p>
+        <p class="paper-venue"><em>IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS)</em>, 2026</p>
+        <div class="paper-links" aria-label="Resources for MD-COAS">
+            <a href="https://arxiv.org/pdf/2607.14455">PDF</a>
+            <a href="https://github.com/hhhhzl/genedynamics">Code</a>
+            <a href="https://hhhhzl.github.io/generative-dynamics/research/md-coas/">Website</a>
+            <a href="https://arxiv.org/html/2607.14455v1">HTML</a>
+            <a href="https://doi.org/10.48550/arXiv.2607.14455">DOI</a>
+            <a href="https://arxiv.org/abs/2607.14455">arXiv</a>
+        </div>
+        <p class="paper-desc">Adaptive scheduling combines soft constraint optimization with hard feasibility projection for constrained motion planning.</p>
+        <details class="paper-detail" id="abstract-he2026mdcoas">
+          <summary>Abstract</summary>
+          <p>Single-Robot Motion Planning (SRMP) in highly non-convex constrained environments, where robots must satisfy collision-free guarantees, dynamic feasibility, and task-related constraints, is challenging under complex constraints and computational limits. Recent Model-Based Diffusion (MBD) approaches recast the SRMP as trajectory optimization that samples from a posterior over trajectories, using known dynamics, and analytically estimates the score function from rollout samples to guide diffusion denoising toward a low-cost, clean trajectory without demonstration learning. While existing works further adapt MBD to constrained environments and showcase promising performance, they are still limited by (1) enforcing safety either via soft feasibility diffusion priors or hard projection operators, but lack a unified framework to integrate both, and (2) fixing safety enforcement to neglect the changing of diffusion scheduling. Therefore, we introduce Model-Based Diffusion via Constraint Optimization and Adaptive Scheduling (MD-COAS) for SRMP that unifies the inexact Augmented Lagrangian Method (iALM) soft diffusion prior with a Convex Feasible Set (CFS)-based hard projection operator, and adaptively schedules and co-optimizes safety enforcement, along with diffusion scheduling. Experiments demonstrate that our method achieves higher safety &amp; success rates, faster convergence, and lower final costs than baseline planners on randomly generated highly non-convex 2D benchmarks and a 7-DoF robot arm avoidance task.</p>
+        </details>
+        <details class="paper-detail" id="bibtex-he2026mdcoas">
+          <summary>BibTeX</summary>
+          <pre tabindex="0"><code>@inproceedings{he2026mdcoas,
+  title = {Motion Planning with Model-Based Diffusion via Constraint Optimization and Adaptive Scheduling},
+  author = {Zhilin He and Bowei Li and Jianlin Dou and Yuner Zhang and Changliu Liu},
+  year = {2026},
+  booktitle = {IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS)},
+  eprint = {2607.14455},
+  archivePrefix = {arXiv},
+  primaryClass = {cs.RO},
+  doi = {10.48550/arXiv.2607.14455},
+  url = {https://arxiv.org/abs/2607.14455}
+}</code></pre>
+        </details>
+      </div>
+    </article>
+    <article class="paper" id="publication-he2026mdoc" data-abbr="MDOC" data-year="2026" data-selected="true" data-topics="Multi-robot systems, Motion planning, Diffusion, Optimal control" aria-labelledby="title-he2026mdoc">
+      <div class="paper-media">
+        <div class="paper-fallback">
+          <a data-visual="montage" href="./assets/publications/gallery/mdoc-experiments.mp4" data-width="1280" data-height="916" data-alt="MDOC: 6 experiment clips shown simultaneously in one animated montage." data-caption="All 6 experiment clips shown together. Each panel loops independently." data-poster="./assets/publications/gallery/mdoc-experiments.jpg" data-gif="./assets/publications/gallery/mdoc-experiments.gif"><img src="./assets/publications/gallery/mdoc-experiments.jpg" alt="MDOC: 6 experiment clips shown simultaneously in one animated montage." width="1280" height="916" loading="lazy"></a>
+        </div>
+      </div>
+      <div class="paper-info">
+        <h3 id="title-he2026mdoc"><a href="https://arxiv.org/abs/2607.12423">Model-Based Diffusion Optimal Control for Multi-Robot Motion Planning</a></h3>
+        <p class="paper-authors"><strong>Zhilin He</strong>, Yorai Shaoul, <a href="https://jiaoyangli.me/">Jiaoyang Li</a><sup title="Advising">†</sup></p>
+        <p class="paper-venue"><em>Robotics: Science and Systems (RSS)</em>, 2026</p>
+        <div class="paper-links" aria-label="Resources for MDOC">
+            <a href="https://arxiv.org/pdf/2607.12423">PDF</a>
+            <a href="https://github.com/hhhhzl/mdoc">Code</a>
+            <a href="https://hhhhzl.github.io/generative-dynamics/research/mdoc/">Website</a>
+            <a href="https://arxiv.org/html/2607.12423v1">HTML</a>
+            <a href="https://doi.org/10.15607/RSS.2026.XXII.041">DOI</a>
+            <a href="https://arxiv.org/abs/2607.12423">arXiv</a>
+        </div>
+        <p class="paper-desc">Known dynamics, safety projections, and conflict-based search extend model-based diffusion planning to coordinated robot teams.</p>
+        <details class="paper-detail" id="abstract-he2026mdoc">
+          <summary>Abstract</summary>
+          <p>Multi-Robot Motion Planning in continuous environments, where robots must generate dynamically feasible, collision-free trajectories, is challenging due to the combinatorial growth of the joint trajectory space and the difficulty of enforcing dynamic feasibility and hard safety constraints. Recent approaches recast trajectory planning as probabilistic inference, sampling from a posterior over trajectories using diffusion models whose score functions are learned from demonstration data. While showing promising performance, these approaches are limited: they often rely on sizable demonstration datasets and struggle to rigorously enforce dynamics and hard safety constraints during sampling. To this end, we introduce Model-Based Diffusion Optimal Control (MDOC), a model-based diffusion planner that efficiently produces dynamically feasible trajectories without relying on data. Crucially, we show that MDOC&#x27;s safety mechanism—combining known dynamics models with Control Barrier Function-constrained projections—naturally scales to multi-robot planning settings through Conflict-Based Search. Across simulation experiments, this integrated method consistently outperforms representative baseline planners in sample efficiency, geometric smoothness, and success rate, while reducing computation time and producing collision-free trajectories. Code: https://github.com/hhhhzl/mdoc</p>
+        </details>
+        <details class="paper-detail" id="bibtex-he2026mdoc">
+          <summary>BibTeX</summary>
+          <pre tabindex="0"><code>@inproceedings{he2026mdoc,
+  title = {Model-Based Diffusion Optimal Control for Multi-Robot Motion Planning},
+  author = {Zhilin He and Yorai Shaoul and Jiaoyang Li},
+  year = {2026},
+  booktitle = {Robotics: Science and Systems (RSS)},
+  eprint = {2607.12423},
+  archivePrefix = {arXiv},
+  primaryClass = {cs.RO},
+  doi = {10.15607/RSS.2026.XXII.041},
+  url = {https://arxiv.org/abs/2607.12423}
+}</code></pre>
+        </details>
+      </div>
+    </article>
+    <article class="paper" id="publication-wang2024antivirus" data-abbr="Antivirus Routing" data-year="2024" data-selected="true" data-topics="Optimal control, Network systems, Epidemiological models" aria-labelledby="title-wang2024antivirus">
+      <div class="paper-media">
+        <div class="paper-fallback">
+          <a data-visual="method" href="./assets/publications/methods/acc.png" data-width="2018" data-height="922" data-alt="Original three-cluster model showing susceptible, infected and recovered states, intra-cluster migration, and antivirus communication between clusters." data-caption="Heterogeneous-cluster system model: antivirus communication and node-state transitions across three network clusters."><img src="./assets/publications/methods/acc.png" alt="Original three-cluster model showing susceptible, infected and recovered states, intra-cluster migration, and antivirus communication between clusters." width="2018" height="922" loading="lazy"></a>
+        </div>
+      </div>
+      <div class="paper-info">
+        <h3 id="title-wang2024antivirus"><a href="https://ieeexplore.ieee.org/document/10644719">Optimal Control for Antivirus Routing in Epidemiological-Based Heterogeneous Computer Network Clusters</a></h3>
+        <p class="paper-authors">Shuangge Wang<sup title="Equal contribution">*</sup>, <strong>Zhilin He</strong><sup title="Equal contribution">*</sup>, Zihao Xu<sup title="Equal contribution">*</sup>, Cymra Haskell<sup title="Advising">†</sup>, Bhaskar Krishnamachari<sup title="Advising">†</sup></p>
+        <p class="paper-venue"><em>American Control Conference (ACC)</em>, 2024</p>
+        <div class="paper-links" aria-label="Resources for Antivirus Routing">
+            <a href="https://raw.githubusercontent.com/hhhhzl/sir_antivirus/main/assets/preprint.pdf">PDF</a>
+            <a href="https://github.com/hhhhzl/sir_antivirus">Code</a>
+            <a href="https://ieeexplore.ieee.org/document/10644719">HTML</a>
+        </div>
+        <p class="paper-desc">Optimal antivirus routing accounts for heterogeneous network clusters and communication constraints to preserve network productivity.</p>
+        <details class="paper-detail" id="abstract-wang2024antivirus">
+          <summary>Abstract</summary>
+          <p>Maintaining productivity in computer networks amidst virus threats has been an ongoing research challenge. Existing studies often use epidemiological-based ordinary differential equations (ODEs) to model virus and antivirus propagation. However, these models typically oversimplify the situation by not accounting for the heterogeneity among different network clusters and ignoring real-world protocol constraints, such as the inability of nodes to communicate simultaneously with nodes in different groups. In this work, we develop a novel model that addresses these limitations by incorporating both heterogeneity and protocol constraints. We start by proposing a single-cluster ODE model where both virus and antivirus propagate. This model is then extended to networks with heterogeneous clusters. Utilizing these models, we formulate the objective of maximizing productivity as an optimization problem solvable through quasi-Newton methods. We also validate the optimal control&#x27;s effectiveness in the single-cluster model using Pontryagin&#x27;s Maximum Principle (PMP). Through experimentation and simulation, we discover that the optimal control policy follows a bang-bang structure and effectively prioritizes actions based on the heterogeneity of clusters.</p>
+        </details>
+        <details class="paper-detail" id="bibtex-wang2024antivirus">
+          <summary>BibTeX</summary>
+          <pre tabindex="0"><code>@inproceedings{wang2024optimal,
+  title = {Optimal Control for Antivirus Routing in Epidemiological-Based Heterogeneous Computer Network Clusters},
+  author = {Wang, Shuangge and He, Zhilin and Xu, Zihao and Haskell, Cymra and Krishnamachari, Bhaskar},
+  booktitle = {2024 American Control Conference (ACC)},
+  pages = {4624--4630},
+  year = {2024},
+  organization = {IEEE}
+}</code></pre>
+        </details>
+      </div>
+    </article>
+  </div>
+  <p id="publication-empty" hidden>No papers match your search.</p>
+</section>
+
+    <section id="service" class="text-section" aria-labelledby="service-heading">
+      <h2 id="service-heading">Review Service</h2>
+      <dl class="dated-list">
+        <dt>2027</dt>
+        <dd>Reviewer for <a href="https://iclr.cc/Conferences/2027">ICLR</a>, <a href="https://2027.ieee-icra.org/">ICRA</a>, and <a href="https://l4dc2027.control.ee.ethz.ch/home">L4DC</a>.</dd>
+        <dt>2026</dt>
+        <dd>Reviewer for the <a href="https://2026.corl.org/">Conference on Robot Learning (CoRL)</a>.</dd>
+      </dl>
+    </section>
+
+    <section id="projects" aria-labelledby="projects-heading">
+      <div class="section-header"><h2 id="projects-heading">Projects</h2></div>
+      <article class="paper project" id="generative-dynamics">
+        <div class="paper-media"><a href="https://hhhhzl.github.io/generative-dynamics/" aria-label="Visit the GenerativeDynamics project"><img src="./assets/projects/generative-dynamics.jpg" alt="A Unitree G1 walking in a motion-capture space" width="160" height="90" loading="lazy"></a></div>
+        <div class="paper-info">
+          <h3 class="papertitle"><a href="https://hhhhzl.github.io/generative-dynamics/">GenerativeDynamics</a></h3>
+          <p>An open-source framework for testing generative planners and feedback controllers in simulation and on hardware. A common interface lets me compare solvers on tasks ranging from peg insertion to humanoid locomotion.</p>
+          <p class="inline-links"><a href="https://hhhhzl.github.io/generative-dynamics/">Project page</a> / <a href="https://github.com/hhhhzl/genedynamics">Code</a> / <a href="https://hhhhzl.github.io/generative-dynamics/results/">Experiments</a></p>
+        </div>
+      </article>
+      <article class="paper project" id="tennis-buddy">
+        <div class="paper-media"><a href="./assets/projects/tennis-buddy-demo.mp4" aria-label="Watch the Tennis Buddy demonstration"><img src="./assets/projects/tennis-buddy-poster.jpg" alt="Tennis Buddy ball retrieval demonstration" width="160" height="90" loading="lazy"></a></div>
+        <div class="paper-info">
+          <h3 class="papertitle"><a href="https://z4ziad.github.io/2026-01-07-tennis_buddy/">Tennis Buddy</a></h3>
+          <p>An autonomous robot that detects and collects tennis balls. I worked on the ROS 2 navigation system, connecting SLAM and Nav2 so the robot could move between collection points and avoid obstacles.</p>
+          <p class="inline-links"><a href="https://z4ziad.github.io/2026-01-07-tennis_buddy/">Project page</a> / <a href="https://github.com/hhhhzl/tennis_buddy">Code</a> / <a href="./assets/projects/tennis-buddy-demo.mp4">Demo</a></p>
+        </div>
+      </article>
+    </section>
+    <footer class="site-footer">Website template by <a href="https://github.com/jonbarron/jonbarron.github.io">Jon Barron</a>.</footer>
+  </main>
+</body>
+</html>

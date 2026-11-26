@@ -1,0 +1,41 @@
+/* One stable frame: the method and the complete montage alternate in place. */
+#publication-list .publication-showcase { width: 100%; overflow: visible; }
+.preview-panel { width: 100%; min-width: 0; }
+.preview-stage { display: block; position: relative; width: 100%; aspect-ratio: var(--preview-aspect, 16 / 10); padding: 0; overflow: hidden; background: #dedbd5; border: 1px solid #bdb8b2; cursor: zoom-in; }
+#publication-list .publication-showcase .publication-preview-media { display: block; width: 100%; height: 100%; max-height: none; aspect-ratio: auto; object-fit: contain; background: transparent; border: 0; animation: preview-reveal 170ms ease-out; }
+#publication-list .preview-stage[data-kind="method"] .publication-preview-media { padding: 3px; }
+.preview-tabs { display: flex; align-items: center; gap: 15px; min-height: 28px; }
+.preview-tab { min-height: 28px; padding: 7px 0 5px; border: 0; border-bottom: 1px solid transparent; background: none; color: #968a96; font: inherit; font-size: 8px; line-height: 1.4; letter-spacing: .11em; text-transform: uppercase; cursor: pointer; }
+.preview-tab[aria-selected="true"] { border-bottom-color: #9b819e; color: #4f4059; }
+.preview-tab:hover { color: #4f4059; }
+@keyframes preview-reveal { from { opacity: .45; } to { opacity: 1; } }
+.preview-expand { display: grid; place-items: center; position: absolute; right: 6px; bottom: 6px; height: 24px; width: 24px; color: #403b4a; background: #f5f1eaed; border: 1px solid #c7bec47a; font-size: 15px; opacity: 0; transform: translateY(3px); transition: opacity .2s, transform .2s; }
+.preview-stage:hover .preview-expand, .preview-stage:focus-visible .preview-expand { opacity: 1; transform: none; }
+.preview-caption { display: flex; align-items: center; justify-content: space-between; min-height: 24px; padding-top: 5px; color: #786c78; }
+.preview-kind { font-size: 8px; letter-spacing: .12em; text-transform: uppercase; }
+.preview-control { display: inline-flex; align-items: center; justify-content: center; width: 28px; height: 28px; padding: 0; border: 0; background: transparent; color: inherit; font-size: 14px; line-height: 1; cursor: pointer; }
+.preview-control:hover { background: #e8e1df; color: var(--ink); }
+.preview-toggle { height: 24px; font-size: 12px; }
+.publication-showcase :focus-visible, .publication-viewer :focus-visible { outline: 2px solid #796789; outline-offset: 3px; }
+.publication-showcase .preview-stage:focus-visible { outline-offset: -3px; }
+.publication-viewer-open { overflow: hidden; }
+.publication-viewer { width: min(1200px, calc(100vw - 56px), calc((100dvh - 210px) * var(--visual-aspect, 1.6))); min-width: min(340px, calc(100vw - 20px)); max-width: none; max-height: calc(100dvh - 48px); padding: 0; border: 1px solid #d0c6c7; background: #f1eee8; color: var(--ink); box-shadow: 0 24px 100px #17152555; }
+.publication-viewer::backdrop { background: #171523bd; backdrop-filter: blur(6px); }
+.viewer-header, .viewer-footer { display: flex; align-items: center; justify-content: space-between; gap: 24px; padding: 14px 22px; }
+.viewer-title { font: 500 12px/1.5 'DM Sans', sans-serif; letter-spacing: .10em; text-transform: uppercase; }
+.viewer-close { font-size: 26px; flex: 0 0 32px; width: 32px; height: 32px; }
+.viewer-stage { background: #dedbd5; }
+.viewer-stage .publication-preview-media { display: block; width: 100%; height: auto; max-height: calc(100dvh - 210px); object-fit: contain; }
+.viewer-footer { align-items: start; border-top: 1px solid #ded7d7; }
+.viewer-caption { color: #746976; font-size: 11px; line-height: 1.7; max-width: 800px; }
+.viewer-download { flex-shrink: 0; border-bottom: 1px solid #b4a3b6; font-size: 11px; line-height: 1.8; }
+@media (hover: none) { .preview-expand { opacity: 1; transform: none; } }
+@media (max-width: 680px) {
+  .preview-kind { font-size: 9px; }
+  .preview-control { width: 32px; height: 32px; }
+  .publication-viewer { width: calc(100vw - 20px); max-height: calc(100dvh - 28px); }
+  .viewer-header, .viewer-footer { padding: 10px 13px; gap: 12px; }
+  .viewer-footer { flex-direction: column; }
+  .viewer-stage .publication-preview-media { max-height: calc(100dvh - 250px); }
+}
+@media (prefers-reduced-motion: reduce) { .publication-showcase *, .publication-viewer * { transition: none !important; animation: none !important; } }

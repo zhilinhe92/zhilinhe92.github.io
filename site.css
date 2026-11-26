@@ -1,0 +1,24 @@
+.page { line-height: 1.45; padding-bottom: 32px; }
+.bio-text p { margin: 12px 0; }
+.bio-photo img { aspect-ratio: 1; object-fit: cover; }
+.bio-photo a { display: block; border-radius: 50%; }
+.bio-links { font-size: 13.5px; display: flex; flex-wrap: wrap; justify-content: center; gap: 2px 0; }
+.bio-links a { white-space: nowrap; }
+.bio-links a:not(:last-child)::after { content: " / "; margin: 0 5px; color: var(--text-muted); }
+.text-section { padding: 16px; }
+.dated-list { display: grid; grid-template-columns: max-content 1fr; gap: 6px 16px; margin: 10px 0 0; }
+.dated-list dt { font-variant-numeric: tabular-nums; }
+.dated-list dd { margin: 0; }
+.project h3 { margin: 0; }
+.project p { margin: 4px 0; }
+.project .paper-media img { width: 100%; height: auto; }
+.project .paper-media a { display: block; }
+.inline-links, .site-footer { color: var(--text-muted); }
+.site-footer { padding: 16px; }
+.skip-link { position: absolute; left: 0; top: 0; padding: 6px 12px; background: white; transform: translateY(-110%); }
+.skip-link:focus { transform: none; }
+:focus-visible { outline: 2px solid var(--accent); outline-offset: 3px; }
+@media (max-width: 640px) {
+  .bio-photo a { width: 148px; margin: auto; }
+  .dated-list { gap: 7px 12px; }
+}
