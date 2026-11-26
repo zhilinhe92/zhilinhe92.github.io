@@ -8,6 +8,8 @@ Run `python3 -m http.server 8000` in this folder to preview the site at <http://
 
 Search engines can crawl the site through `robots.txt` and `sitemap.xml`. The canonical URL is `https://zhilinhe92.github.io/`. To check Google indexing or request a crawl, verify this URL-prefix property in Google Search Console, inspect the homepage URL, and submit `sitemap.xml`. Indexing is controlled by Google and is not immediate or guaranteed.
 
+Keep the `google-site-verification` meta tag in the homepage `<head>` when editing or replacing the template. Google periodically checks this public tag to maintain Search Console ownership verification.
+
 Project thumbnails automatically play silent, looping video previews while visible, without playback controls. To change a clip, replace its `data-project-video` path in `index.html`; keep the linked image as a fallback. `project-preview.js` respects reduced-motion preferences and pauses videos outside the viewport. Sources and excerpts are documented in `assets/projects/PREVIEW-SOURCES.md`.
 
 The Lato font license is in `assets/fonts/OFL.txt`. Research media credits are in `assets/publications/CREDITS.md`. The GenerativeDynamics project image comes from its [hardware demonstrations](https://hhhhzl.github.io/generative-dynamics/results/). The Tennis Buddy image and video are from the [original project](https://z4ziad.github.io/2026-01-07-tennis_buddy/).
