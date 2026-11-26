@@ -1,0 +1,9 @@
+.project-preview { position: relative; width: 100%; }
+.project-preview-link { position: relative; aspect-ratio: 16 / 9; overflow: hidden; background: #eee; }
+.project .project-preview-link img { display: block; width: 100%; height: 100%; object-fit: cover; }
+.project-preview-video { position: absolute; inset: 0; display: block; width: 100%; height: 100%; object-fit: contain; opacity: 0; pointer-events: none; }
+.project-preview[data-ready="true"] .project-preview-video { opacity: 1; }
+.project-preview-toggle { position: absolute; right: 4px; bottom: 4px; display: grid; place-items: center; width: 28px; height: 28px; padding: 0; border: 1px solid #ddd; border-radius: 3px; color: #222; background: #fffffff0; font: 14px/1 sans-serif; cursor: pointer; }
+.project-preview-toggle:hover { background: #fff; border-color: #aaa; }
+.project-preview-toggle[hidden] { display: none; }
+.project-preview-toggle:focus-visible { outline: 2px solid var(--accent, #1772d0); outline-offset: 2px; }

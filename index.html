@@ -10,9 +10,11 @@
   <link rel="icon" href="./favicon.svg" type="image/svg+xml">
   <link rel="stylesheet" href="./stylesheet.css">
   <link rel="stylesheet" href="./site.css">
+  <link rel="stylesheet" href="./project-preview.css">
   <link rel="stylesheet" href="./research/preview.css">
   <link rel="stylesheet" href="./research/papers.css">
   <script src="./portrait.js" defer></script>
+  <script src="./project-preview.js" defer></script>
   <script type="module" src="./research/papers.js"></script>
 </head>
 <body>
@@ -21,7 +23,7 @@
     <header class="bio">
       <div class="bio-text">
         <h1 class="name">Zhilin He</h1>
-        <p>I’m a master’s student in <a href="https://www.ece.cmu.edu/">Electrical and Computer Engineering</a> at <a href="https://www.cmu.edu/">Carnegie Mellon University</a>. I work with <a href="https://www.cs.cmu.edu/~cliu6/">Changliu Liu</a> in the <a href="https://icontrol.ri.cmu.edu/">Intelligent Control Lab</a> and <a href="https://www.ece.cmu.edu/directory/bios/andrew-spielberg.html">Andrew Spielberg</a> in the <a href="https://loci.ece.cmu.edu/">Laboratory of Computational Invention</a>. I also work closely with <a href="https://www.andrew.cmu.edu/user/gaurij/">Gauri Joshi</a> and <a href="https://jiaoyangli.me/">Jiaoyang Li</a>.</p>
+        <p>I’m a master’s student in <a href="https://www.ece.cmu.edu/">Electrical and Computer Engineering</a> at <a href="https://www.cmu.edu/">Carnegie Mellon University</a>. I work with <a href="https://www.cs.cmu.edu/~cliu6/">Prof. Changliu Liu</a> in the <a href="https://icontrol.ri.cmu.edu/">Intelligent Control Lab</a> and <a href="https://www.ece.cmu.edu/directory/bios/andrew-spielberg.html">Prof. Andrew Spielberg</a> in the <a href="https://loci.ece.cmu.edu/">Laboratory of Computational Invention</a>. I also work closely with <a href="https://www.andrew.cmu.edu/user/gaurij/">Prof. Gauri Joshi</a> and <a href="https://jiaoyangli.me/">Prof. Jiaoyang Li</a>.</p>
         <p>My research interests are robot learning, motion planning, and control. I develop generative methods that use robot dynamics, geometric constraints, and contact feedback to plan motion. My work spans <a href="https://arxiv.org/abs/2610.21140">contact-rich manipulation</a>, <a href="https://arxiv.org/abs/2610.07772">legged locomotion</a>, and <a href="https://roboticsproceedings.org/rss22/p041.html">multi-robot coordination</a>.</p>
         <nav class="bio-links" aria-label="Contact and academic profiles">
           <a href="mailto:hectorh@andrew.cmu.edu">Email</a>
@@ -44,10 +46,14 @@
       <dl class="dated-list">
         <dt><time datetime="2026-10-09">Oct 9, 2026</time></dt>
         <dd>I released <a href="https://github.com/hhhhzl/genedynamics/releases/tag/v0.1.0">GenerativeDynamics v0.1.0</a>, the first public version of my robotics planning and control framework.</dd>
-        <dt>2026</dt>
-        <dd><a href="https://arxiv.org/abs/2609.18964">FedGuide</a> was accepted for a <strong>spotlight presentation</strong> at CoRL.</dd>
-        <dt>2026</dt>
-        <dd><a href="https://icontrol.ri.cmu.edu/news/iros2026.html">MD-COAS</a> was accepted to IROS, and our <a href="https://roboticsproceedings.org/rss22/p041.html">multi-robot motion planning paper</a> was accepted to RSS.</dd>
+        <dt><time datetime="2026-09-29">Sep 29, 2026</time></dt>
+        <dd><a href="https://github.com/hhhhzl/fedguide">FedGuide</a> was selected for a <strong>spotlight presentation</strong> at CoRL 2026.</dd>
+        <dt><time datetime="2026-09-04">Sep 4, 2026</time></dt>
+        <dd><a href="https://arxiv.org/abs/2609.18964">FedGuide</a> was accepted to CoRL 2026, and the <a href="https://github.com/hhhhzl/fedguide">code</a> is now open source.</dd>
+        <dt><time datetime="2026-06-10">Jun 10, 2026</time></dt>
+        <dd><a href="https://icontrol.ri.cmu.edu/news/iros2026.html">MD-COAS</a> was accepted to IROS 2026.</dd>
+        <dt><time datetime="2026-04-27">Apr 27, 2026</time></dt>
+        <dd><a href="https://roboticsproceedings.org/rss22/p041.html">MDOC</a> was accepted to RSS 2026, and the <a href="https://github.com/hhhhzl/mdoc">code</a> is now open source.</dd>
         <dt>2024</dt>
         <dd>Our paper on <a href="https://ieeexplore.ieee.org/document/10644719">optimal antivirus routing</a> appeared at the American Control Conference.</dd>
       </dl>
@@ -320,7 +326,7 @@
     <section id="projects" aria-labelledby="projects-heading">
       <div class="section-header"><h2 id="projects-heading">Projects</h2></div>
       <article class="paper project" id="generative-dynamics">
-        <div class="paper-media"><a href="https://hhhhzl.github.io/generative-dynamics/" aria-label="Visit the GenerativeDynamics project"><img src="./assets/projects/generative-dynamics.jpg" alt="A Unitree G1 walking in a motion-capture space" width="160" height="90" loading="lazy"></a></div>
+        <div class="paper-media" data-project-video="./assets/projects/generative-dynamics-preview.mp4" data-project-name="GenerativeDynamics"><a href="https://hhhhzl.github.io/generative-dynamics/" aria-label="Visit the GenerativeDynamics project"><img src="./assets/projects/generative-dynamics.jpg" alt="A Unitree G1 walking in a motion-capture space" width="160" height="90" loading="lazy"></a></div>
         <div class="paper-info">
           <h3 class="papertitle"><a href="https://hhhhzl.github.io/generative-dynamics/">GenerativeDynamics</a></h3>
           <p>An open-source framework for testing generative planners and feedback controllers in simulation and on hardware. A common interface lets me compare solvers on tasks ranging from peg insertion to humanoid locomotion.</p>
@@ -328,7 +334,7 @@
         </div>
       </article>
       <article class="paper project" id="tennis-buddy">
-        <div class="paper-media"><a href="./assets/projects/tennis-buddy-demo.mp4" aria-label="Watch the Tennis Buddy demonstration"><img src="./assets/projects/tennis-buddy-poster.jpg" alt="Tennis Buddy ball retrieval demonstration" width="160" height="90" loading="lazy"></a></div>
+        <div class="paper-media" data-project-video="./assets/projects/tennis-buddy-preview.mp4" data-project-name="Tennis Buddy"><a href="./assets/projects/tennis-buddy-demo.mp4" aria-label="Watch the Tennis Buddy demonstration"><img src="./assets/projects/tennis-buddy-poster.jpg" alt="Tennis Buddy ball retrieval demonstration" width="160" height="90" loading="lazy"></a></div>
         <div class="paper-info">
           <h3 class="papertitle"><a href="https://z4ziad.github.io/2026-01-07-tennis_buddy/">Tennis Buddy</a></h3>
           <p>An autonomous robot that detects and collects tennis balls. I worked on the ROS 2 navigation system, connecting SLAM and Nav2 so the robot could move between collection points and avoid obstacles.</p>
@@ -336,7 +342,15 @@
         </div>
       </article>
     </section>
-    <footer class="site-footer">Website template by <a href="https://github.com/jonbarron/jonbarron.github.io">Jon Barron</a>.</footer>
+    <footer class="site-footer">
+      <figure class="visitor-map">
+        <a href="https://info.flagcounter.com/Pvr8" aria-label="View worldwide visitor statistics">
+          <img src="https://s05.flagcounter.com/map/Pvr8/size_s/txt_555555/border_FFFFFF/pageviews_1/viewers_0/flags_0/" alt="World map of visitor locations and pageview count" width="400" height="205" loading="eager" decoding="async">
+        </a>
+        <figcaption>Global visitors · since November 2026 · <a href="https://info.flagcounter.com/Pvr8">Statistics</a></figcaption>
+      </figure>
+      <p>Website template by <a href="https://github.com/jonbarron/jonbarron.github.io">Jon Barron</a>.</p>
+    </footer>
   </main>
 </body>
 </html>

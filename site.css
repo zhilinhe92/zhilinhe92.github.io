@@ -15,6 +15,10 @@
 .project .paper-media a { display: block; }
 .inline-links, .site-footer { color: var(--text-muted); }
 .site-footer { padding: 16px; }
+.visitor-map { width: 400px; max-width: 100%; margin: 28px auto 32px; text-align: center; }
+.visitor-map > a { display: block; }
+.visitor-map img { display: block; width: 100%; height: auto; }
+.visitor-map figcaption { margin-top: 8px; font-size: 12px; }
 .skip-link { position: absolute; left: 0; top: 0; padding: 6px 12px; background: white; transform: translateY(-110%); }
 .skip-link:focus { transform: none; }
 :focus-visible { outline: 2px solid var(--accent); outline-offset: 3px; }
