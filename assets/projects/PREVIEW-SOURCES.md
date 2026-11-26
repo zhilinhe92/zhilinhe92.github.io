@@ -15,5 +15,5 @@ baseline / yuv420p with MP4 faststart. They play at the source speed.
   The full demonstration remains available through the thumbnail link and Demo link.
 
 Posters remain visible when JavaScript is unavailable or reduced motion is enabled.
-The preview Play/Pause button allows an explicit choice; playback pauses when the
+Previews play automatically without playback controls. Playback pauses when the
 preview leaves the viewport or the tab is hidden.
